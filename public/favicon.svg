@@ -1,0 +1,9 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="14" fill="#4A5A2B"/>
+  <!-- aceituna -->
+  <ellipse cx="28" cy="36" rx="14" ry="17" fill="#9CAA6B"/>
+  <ellipse cx="23" cy="30" rx="3.5" ry="6" fill="#FBF3E2" opacity="0.45"/>
+  <!-- tallo + hoja -->
+  <path d="M28 19 Q34 9 46 10" fill="none" stroke="#E2B25A" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="44" cy="14" rx="8" ry="3.5" fill="#6B7F3A" transform="rotate(-20 44 14)"/>
+</svg>
