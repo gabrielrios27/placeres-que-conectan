@@ -25,7 +25,8 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="relative flex min-h-[92vh] items-center justify-center overflow-hidden px-4 pt-24"
+      style={{ paddingTop: "calc(var(--festive-bar-h, 0px) + 7.5rem)" }}
+      className="relative flex min-h-[92vh] items-center justify-center overflow-hidden px-4 pb-16"
     >
       {/* Aurora: luces cálidas difuminadas en movimiento lento */}
       <motion.div
@@ -76,8 +77,8 @@ export default function Hero() {
             <motion.img
               src="/logo-real.png"
               alt={`Logo de ${MARCA.nombre}`}
-              className="h-32 w-32 object-contain drop-shadow-[0_18px_30px_var(--shadow)] sm:h-44 sm:w-44"
-              animate={reduce ? undefined : { y: [0, -8, 0] }}
+              className="h-32 w-32 object-contain drop-shadow-[0_18px_30px_var(--shadow)] sm:h-40 sm:w-40"
+              animate={reduce ? undefined : { y: [0, -6, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
             />
           </div>
