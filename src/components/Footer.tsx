@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 px-4 py-12 sm:px-6 md:grid-cols-3">
         <div>
           <div className="flex items-center gap-2.5">
-            <img src="/logo.svg" alt="" aria-hidden="true" className="h-10 w-10" />
+            <img src="/logo-real.png" alt="" aria-hidden="true" className="h-12 w-12 object-contain" />
             <span className="fuente-script text-2xl text-accent">{MARCA.nombre}</span>
           </div>
           <p className="mt-3 text-sm text-[var(--text-soft)]">{MARCA.subtitulo}</p>

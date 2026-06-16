@@ -76,7 +76,8 @@ export default function Header({
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-40 transition-all duration-300 ${
+      style={{ top: "var(--festive-bar-h, 0px)" }}
+      className={`fixed inset-x-0 z-40 transition-[background-color,padding,border-color] duration-300 ${
         scrolled
           ? "border-b border-tborder bg-[var(--bg)]/80 py-2 shadow-calida-sm backdrop-blur-md"
           : "border-b border-transparent py-3"
@@ -86,18 +87,12 @@ export default function Header({
         {/* Logo */}
         <a href="#inicio" className="flex items-center gap-2.5" aria-label="Inicio">
           <img
-            src="/logo.svg"
-            alt=""
-            aria-hidden="true"
-            className="h-10 w-10 shrink-0"
+            src="/logo-real.png"
+            alt={MARCA.nombre}
+            className="h-11 w-11 shrink-0 object-contain sm:h-12 sm:w-12"
           />
-          <span className="flex flex-col leading-none">
-            <span className="fuente-script text-xl text-accent sm:text-2xl">
-              {MARCA.nombre}
-            </span>
-            <span className="hidden text-[11px] font-medium uppercase tracking-wider text-[var(--text-soft)] sm:block">
-              {MARCA.subtitulo}
-            </span>
+          <span className="fuente-script text-xl text-accent sm:text-2xl">
+            {MARCA.nombre}
           </span>
         </a>
 

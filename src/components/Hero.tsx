@@ -74,9 +74,9 @@ export default function Hero() {
               aria-hidden="true"
             />
             <motion.img
-              src="/logo.svg"
+              src="/logo-real.png"
               alt={`Logo de ${MARCA.nombre}`}
-              className="h-28 w-28 drop-shadow-[0_18px_30px_var(--shadow)] sm:h-36 sm:w-36"
+              className="h-32 w-32 object-contain drop-shadow-[0_18px_30px_var(--shadow)] sm:h-44 sm:w-44"
               animate={reduce ? undefined : { y: [0, -8, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
             />

@@ -6,6 +6,7 @@ import Calculadora from "./components/Calculadora";
 import SobreNosotros from "./components/SobreNosotros";
 import Footer from "./components/Footer";
 import FondoEstacion from "./components/FondoEstacion";
+import CapaFestiva from "./components/festivo/CapaFestiva";
 
 export default function App() {
   const { pref, setPref, estacion } = useTema();
@@ -14,6 +15,9 @@ export default function App() {
     <>
       {/* Capa de partículas ambientales según la estación (detrás de todo) */}
       <FondoEstacion estacion={estacion} />
+
+      {/* Capa festiva automática (se activa sola cerca de cada festividad) */}
+      <CapaFestiva />
 
       {/* Saltar al contenido (accesibilidad) */}
       <a
